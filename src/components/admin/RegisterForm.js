@@ -1,6 +1,6 @@
 import React from 'react';
 import AdminImage from '../../media/admin_register.svg'
-
+import Button from '../Button';
 function RegisterForm(props) {
     return (
         <div className='row p-5'>
@@ -29,7 +29,9 @@ function RegisterForm(props) {
                     I've read and understood Demeed <a href='#'>Terms & Conditions</a>
                     </label>
                 </div>
-                <button className='p-button fw-bold'>Register As Admin</button>
+
+                <Button buttonClass='p-button fw-bold'>Register as admin</Button>
+
             </div>
             <div className='col-md-6 d-md-block d-sm-none'>
                 <img src={AdminImage} className='w-80'></img>
