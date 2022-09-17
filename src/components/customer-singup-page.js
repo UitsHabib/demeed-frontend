@@ -4,7 +4,7 @@ import Header from './header';
 
 function SingUp() {
     return (
-        <section>
+        <section className='bg-slate-300 pb-10'>
             <Header />
             <FormPage />
 
