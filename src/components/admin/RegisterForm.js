@@ -1,6 +1,7 @@
 import React from 'react';
 import AdminImage from '../../media/admin_register.svg'
-import Button from '../Button';
+import InputControl from '../composeable/InputControl';
+import Button from '../composeable/Button';
 function RegisterForm(props) {
     return (
         <div className='row p-5'>
@@ -9,26 +10,34 @@ function RegisterForm(props) {
                     Let's register as admin on Demeed ...
                 </h3>
                 <br></br>
-                <div class="mb-3">
-                    <label for="nameInput" class="form-label">Full Name : </label>
-                    <input type="text" class="form-control" id="nameInput" placeholder="Deo Parox"></input>
-                </div>
-                <div class="mb-3">
-                    <label for="emailinput" class="form-label">Email address : </label>
-                    <input type="email" class="form-control" id="emailinput" placeholder="name@example.com"></input>
-                </div>
 
-                <div class="mb-3">
-                    <label for="passInput" class="form-label">Password: </label>
-                    <input type="password" class="form-control" id="passInput" placeholder="Type your password here"></input>
-                </div>
+                <InputControl 
+                    label = 'Full Name : '
+                    name = 'full_name'
+                    type = 'text'
+                    placeholder = 'Deo Parox'
+                />
+                
+                <InputControl 
+                    label = 'Email : '
+                    name = 'email'
+                    type = 'email'
+                    placeholder = 'deo.parox@gamil.com'
+                />
 
-                <div class="form-check py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
-                    <label class="form-check-label" for="flexCheckDefault">
-                    I've read and understood Demeed <a href='#'>Terms & Conditions</a>
-                    </label>
-                </div>
+
+                <InputControl 
+                    label = 'Password:  '
+                    name = 'password'
+                    type = 'password'
+                    placeholder = 'Type your password here'
+                />
+
+                <InputControl 
+                    label = { <React.Fragment>I've read and understood Demeed <a href='#'>Terms & Conditions</a> </React.Fragment>}
+                    name = 'terms&condition'
+                    type = 'checkbox'
+                />
 
                 <Button buttonClass='p-button fw-bold'>Register as admin</Button>
 
