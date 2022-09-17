@@ -1,0 +1,38 @@
+:root{
+    --main-color:#45c881;
+    --seconday-color:#fff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+
+body{
+    max-width: 98% !important;
+    /* overflow: hidden; */
+    font-family: 'Nunito', sans-serif !important;
+}
+img{
+    max-width:90% !important;
+    height: auto;
+}
+.p-button{
+    color:var(--seconday-color);
+    background-color: var(--main-color);
+    border: 1px solid  var(--main-color);
+    border-radius: 5px;
+    padding: 10px 30px;
+    transition: all ease 0.2s;
+}
+
+.p-button:hover{
+    color:var(--main-color);
+    background-color: var(--main-color);
+    background-color: var(--seconday-color);
+}
+
+.title {
+    border-left: 25px solid var(--main-color);
+    padding-left: 15px;
+}
+
+label{
+    font-size: 15px;
+}
