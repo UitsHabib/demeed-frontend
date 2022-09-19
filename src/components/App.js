@@ -1,5 +1,5 @@
 import React from 'react';
-import SingUp from './customer-singup-page';
+import SingUp from './SingUp/SingUp';
 
 function App() {
   return (
@@ -7,6 +7,6 @@ function App() {
       <SingUp />
     </div>
   );
-}
+};
 
 export default App;
