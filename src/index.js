@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './components/App';
-import './css/index.css';
+import { BrowserRouter } from 'react-router-dom';
+
+import AppComponent from './modules/core';
+import './style/index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <App />
+    <BrowserRouter>
+        <AppComponent />
+    </BrowserRouter>
 );

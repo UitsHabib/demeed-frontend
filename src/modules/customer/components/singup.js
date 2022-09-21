@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './Header';
-import FormPage from '../Form/FormPage';
+import Header from './header';
+import FormPage from './form/FormPage';
 
-function SingUp() {
+function Singup() {
     return (
         <section className='bg-slate-300 pb-10'>
             <Header />
@@ -10,4 +10,5 @@ function SingUp() {
         </section>
     );
 };
-export default SingUp;
+
+export default Singup;
