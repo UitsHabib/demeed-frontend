@@ -2,35 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* -------------------- Google Font cdn -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
 
+
+/*-------------------- CSS Base ---------------- */
+
+@layer base {
+    body {
+        font-family: 'Nunito', sans-serif !important;
+    }
+}
+
+
+/*-------------------- CSS Components ---------------- */
 
 @layer components {
     .container {
         @apply w-10/12
     }
-    .hrLineStyle{
-        @apply h-0.5 shadow-sm bg-slate-300 my-10
-    }
-    .anccorStyle{
-        @apply md:text-2xl text-gray-700 hover:text-green-800
-    }
-    .iconStyle{
-        @apply inline w-6 md:w-10 mb-1 group-hover:translate-x-2
-    }
-    .formTitel{
-        @apply text-xl md:text-3xl text-center text-gray-700 font-semibold py-4
-    }
-    .formStyle{
-        @apply container shadow-lg mx-auto bg-slate-200 rounded py-4
-    }
+
     .inputStyle {
-        @apply placeholder:italic placeholder:text-sm placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-sky-500 focus:ring-1 sm:text-sm
+        @apply placeholder:italic placeholder:text-sm placeholder:text-slate block w-full border border-slate rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-main focus:ring-1 sm:text-sm
     }
-    .textLabel{
-        @apply md:text-xl text-lg text-slate-400 p-1 pb-3 block
+    .btn {
+        @apply font-bold text-sm border py-1 px-6 rounded-full shadow-lg focus:outline-none focus:ring-offset-1 focus:ring-1 transform hover:duration-700
     }
-    .btnStyle{
-        @apply text-slate-600 font-bold block bg-slate-300 border border-slate-300 rounded-md py-3 px-28 shadow-md focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-xl hover:bg-slate-500 hover:text-white transform hover:duration-700
+    .btnUp{
+        @apply border-main text-secondary bg-main hover:text-main hover:bg-secondary focus:border-main py-2 px-12
+    }
+    .btnIn{
+        @apply border-main text-main hover:bg-main hover:text-secondary focus:border-main
     }
 }
-

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Singup, CustomerClientRoutes } from '../customer';
+import { Singup } from '../customer';
 
 function AppComponent() {
     return (

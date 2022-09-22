@@ -5,7 +5,7 @@ function Selections(props) {
 
     return (
         <div className={divStyle}>
-            <label for={name} className={labelStyle}>{label}</label>
+            <label htmlFor={name} className={labelStyle}>{label}</label>
             <select className={className} id={name}>
                 {
                     options?.map((item, index) => (
