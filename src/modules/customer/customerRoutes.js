@@ -1,12 +1,12 @@
 import { useLocation, Route, Routes } from 'react-router-dom';
-import Singup from './components/singup';
+import Signup from './components/Signup';
 
 function CustomerRoutes() {
     const { pathname } = useLocation();
     
     return (
         <Routes>
-            <Route path={pathname} element={<Singup />} />
+            <Route path={pathname} element={<Signup />} />
         </Routes>
     )
 };

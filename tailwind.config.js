@@ -10,6 +10,7 @@ module.exports = {
       'silver': '#9ca3af',
       'slate': '#cbd5e1',
       'gray': '#334155',
+      'red': '#ef4444',
     },
   },
     extend: {},
