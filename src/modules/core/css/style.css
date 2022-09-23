@@ -4,7 +4,7 @@ body{
 }
 .account-block {
     padding: 0;
-    background-image: url("/src/images/seller-login.jpg");
+    background-image: url("/src/modules/core/images/seller-login.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
