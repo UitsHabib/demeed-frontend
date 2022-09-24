@@ -12,38 +12,38 @@ function RegisterForm(props) {
                 <br></br>
 
                 <InputControl 
-                    label = 'Full Name : '
-                    name = 'full_name'
-                    type = 'text'
-                    placeholder = 'Deo Parox'
+                    label='Full Name : '
+                    name='full_name'
+                    type='text'
+                    placeholder='Deo Parox'
                 />
                 
                 <InputControl 
-                    label = 'Email : '
-                    name = 'email'
-                    type = 'email'
-                    placeholder = 'deo.parox@gamil.com'
+                    label='Email : '
+                    name='email'
+                    type='email'
+                    placeholder='deo.parox@gamil.com'
                 />
 
 
                 <InputControl 
-                    label = 'Password:  '
-                    name = 'password'
-                    type = 'password'
-                    placeholder = 'Type your password here'
+                    label='Password:  '
+                    name='password'
+                    type='password'
+                    placeholder='Type your password here'
                 />
 
                 <InputControl 
-                    label = { <React.Fragment>I've read and understood Demeed <a href='#'>Terms & Conditions</a> </React.Fragment>}
-                    name = 'terms&condition'
-                    type = 'checkbox'
+                    label={ <React.Fragment>I've read and understood Demeed <a href='#'>Terms & Conditions</a> </React.Fragment>}
+                    name='terms&condition'
+                    type='checkbox'
                 />
 
                 <Button buttonClass='p-button fw-bold'>Register as admin</Button>
 
             </div>
             <div className='col-md-6 d-md-block d-sm-none'>
-                <img src={AdminImage} className='w-80'></img>
+                <img src={AdminImage} className='w-80' alt='Register Admin'></img>
             </div>
         </div>
     );
