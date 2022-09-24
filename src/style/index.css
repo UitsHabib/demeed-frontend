@@ -23,7 +23,7 @@
     }
 
     .inputStyle {
-        @apply placeholder:italic placeholder:text-sm placeholder:text-silver block w-full border border-slate rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-main focus:ring-1 sm:text-sm
+        @apply placeholder:italic placeholder:text-sm placeholder:text-silver block w-full border border-slate rounded-md py-2 px-3 shadow-sm focus:outline-none focus:ring-main focus:ring-1 sm:text-sm
     }
     .btn {
         @apply font-bold text-sm border py-1 px-5 rounded-full shadow-lg focus:outline-none focus:ring-offset-1 focus:ring-1 transform hover:duration-700
@@ -35,6 +35,6 @@
         @apply border-main text-main hover:bg-main hover:text-secondary focus:border-main
     }
     .error-massage{
-        @apply text-red text-sm absolute inset-y-0 top-2 left-10
+        @apply text-red text-sm pl-1
     }
 }

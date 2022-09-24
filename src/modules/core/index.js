@@ -1,3 +1,3 @@
-import AppComponent from "./AppComponent";
+import AppComponent from "./app.component";
 
 export default AppComponent;
