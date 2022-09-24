@@ -1,6 +1,7 @@
 import React from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { loginSchema } from '../admin.schema';
+import { login } from "../admin.actions";
 
 function Login() {
   return (
@@ -12,7 +13,13 @@ function Login() {
             }} 
             validationSchema={loginSchema}
             onSubmit={(values, actions) => {
-                console.log(values);
+                login(values)
+                    .then(response => {
+                        //work from here home page show. 
+                    })
+                    .catch(error => {
+                        console.log("Error");
+                    })
                 actions.setSubmitting(false);
             }}
         > 
