@@ -4,10 +4,9 @@ import ButtonControl from '../../core/components/ButtonControl';
 import ImageComponent from './ImageComponent';
 import FromComponent from './fromComponent';
 import IconComponent from './iconComponent';
-import Signin from './Signin';
 
-function Signup() {
-    return (
+function Signup( ) {
+        return (
         <section className='bg-secondary'>
             <div className='container mx-auto md:flex'>
                 <ImageComponent />
@@ -16,7 +15,7 @@ function Signup() {
                     {/* ======= Header Area ======= */}
                     <header className='flex justify-end items-center gap-8 py-8'>
                         <h3 className='text-main'>Already have an Account?</h3>
-                        <ButtonControl className='btn btnIn' children='SIGN IN' />
+                        <ButtonControl to="/customer/Signin" className='btn btnIn' children='SIGN IN' />
                     </header>
                     {/* ======= Title Area ======= */}
                     <div className='space-y-2'>
