@@ -7,9 +7,9 @@ import './css/style.css';
 function App(){
     return(
         <div className='container'>            
-            <p className='' style={{textAlign: "right"}}><a href='/marchant/login'>Seller-Login</a></p>
+            <p className='' style={{textAlign: "right"}}><a href='/merchant/login'>Seller-Login</a></p>
             <Routes>                
-                <Route path='/marchant/login' element={<Login/>}/>                
+                <Route path='/merchant/login' element={<Login/>}/>                
             </Routes>  
         </div> 
     );
