@@ -7,7 +7,7 @@ function App() {
     return (
         <div>
             <Routes>
-              <Route path='/admin/PermissionTable' element={<PermissionTable/>}/>
+              <Route path='/admin/permissions' element={<PermissionTable/>}/>
             </Routes>
         </div>
       );

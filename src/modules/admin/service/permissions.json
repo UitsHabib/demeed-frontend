@@ -1,0 +1,104 @@
+{
+    "permissions": [
+      {
+        "id": "01",
+        "name": "View Project",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "02",
+        "name": "Mark Project as Closed/Active/Completed",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "03",
+        "name": "View Estimate",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "04",
+        "name": "Add New Estimate",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "05",
+        "name": "Review Estimate",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "06",
+        "name": "Approve Estimate",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "07",
+        "name": "Delete Estimate",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "08",
+        "name": "Activate Estimate",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "09",
+        "name": "Copy Estimate",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "10",
+        "name": "Review Project Notification",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "11",
+        "name": "View Material Stores",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "12",
+        "name": "Deliver to Site",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "13",
+        "name": "Add/Update Tax",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "14",
+        "name": "Add/Update Tax",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "15",
+        "name": "Add/Update Tax",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "16",
+        "name": "Add/Update Tax",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "17",
+        "name": "Add/Update Tax",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "18",
+        "name": "Add/Update Tax",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "19",
+        "name": "Add/Update Tax",
+        "description": "Lorem Ipsum is not simply random text."
+      },
+      {
+        "id": "20",
+        "name": "Add/Update Tax",
+        "description": "Lorem Ipsum is not simply random text."
+      }
+    ]
+  }
