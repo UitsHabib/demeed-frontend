@@ -20,7 +20,7 @@ function CreateUser () {
     return (
         <div className="row">
             <div className="col-lg-12">
-                <div className="card">
+                <div className="card mt-4">
                     <div className="card-body text-center">
                         <h3> {`${setName} created successfully`}</h3>
                     </div>
