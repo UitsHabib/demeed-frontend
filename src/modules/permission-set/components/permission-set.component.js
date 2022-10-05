@@ -6,12 +6,7 @@ import { permissionSetNameSchema } from "../permission-set.schema";
 function PermissionSet () {
         const [shouldRedirect, setShouldRedirect] = useState(false);
 
-
         const navigate = useNavigate();
-
-        const handleChange = (event) => {
-            console.log(event);
-        }
     
         useEffect(() => {
             if (shouldRedirect) {
@@ -24,15 +19,14 @@ function PermissionSet () {
             <div className='col-lg-12'>
                 <Formik
                     initialValues={{
-                        fieldOne: "",
+                        permissionSetName: "",
                     }} 
 
                     validationSchema={permissionSetNameSchema}
 
                     onSubmit={(values, actions) => { 
-                        console.log(values);
 
-                        handleChange(values);
+                        console.log(values);
 
                         setShouldRedirect(true);
 
@@ -45,15 +39,15 @@ function PermissionSet () {
                                 <div className="row">
                                     <div className='col-lg-4 ms-auto'>
                                         <label 
-                                            htmlFor='set_name' className='form-label'>
+                                            htmlFor='permissionSetName' className='form-label'>
                                                 <h4>
                                                     Create Permission Set for :
                                                 </h4>
                                         </label>
-                                        <Field type="set_name" className="form-control" id="set_name" name="set_name"  />
+                                        <Field type="permissionSetName" className="form-control" id="permissionSetName" name="permissionSetName"  />
 
                                         <div className='invalid-feedback d-block'>
-                                            <ErrorMessage name="set_name" />
+                                            <ErrorMessage name="permissionSetName" />
                                         </div>
                                     </div>
                                     
@@ -90,9 +84,7 @@ function PermissionSet () {
                                             <button type="submit" className="btn btn-success mt-2">Create</button>
                                         </div>
                                     </div>
-
                                 </div>
-                                
                             </Form>
                         )
                     }}
