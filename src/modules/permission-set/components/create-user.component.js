@@ -7,7 +7,8 @@ function CreateUser () {
     useEffect(() => {
         async function getName () {
             try {
-                const permissionSetName = await axios.get("A link");
+                const permissionSetName = await axios.get("http://localhost:4000/api/users");
+                console.log(permissionSetName);
             }
             catch(err) {
                 const newName = "Admin";

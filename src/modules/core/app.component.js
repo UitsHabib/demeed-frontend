@@ -1,19 +1,32 @@
 import React from "react";
-import { Routes, Route  } from 'react-router-dom';
+import { Routes, Route, Navigate  } from 'react-router-dom';
 
 import { Login, AdminClientRoutes } from "../admin";
-import { PermissionSet, CreateUser } from '../permission-set';
+import { PermissionSetClientRoutes, CreateUser } from '../permission-set';
+import PublicRoute from "./public-route";
 
 function App() {
     return (
       <div className="app">
          <div className="container">
             <Routes>
-                <Route path="admin/login" element={ <Login />} />
-
-                <Route path="/admin/permission-set/create" element={<PermissionSet />} />
-
-                <Route path="/admin/permission-set/create/successful" element={<CreateUser />} />
+                <Route path="/" element={<Navigate to="/admin/login" />} />
+                <Route 
+                    path="/admin/login" 
+                    element={
+                        <PublicRoute>
+                            <Login />
+                        </PublicRoute>
+                    }
+                />
+                
+                <Route path="/admin/permission-set/*" element={<PermissionSetClientRoutes />} />
+                <Route 
+                    path="/admin/permission-set/create/successful" 
+                    element={
+                        <CreateUser />
+                    } 
+                />
             </Routes>
          </div>
       </div>
