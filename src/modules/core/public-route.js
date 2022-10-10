@@ -1,12 +1,14 @@
 import React from "react";
-import { Route, Navigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
-
-function PublicRoute({ component: Component, ...rest }) {
-    console.log("-------------------------------------------",Component,rest);
+function PublicRoute({ children }) {
     const loggedInUser = localStorage.getItem('access_token');
 
-    return loggedInUser ? <Navigate to="/admin/homepage" /> : <Route {...rest} element={ <Component />} />;
+    if (loggedInUser) {
+        return <Navigate to='/admin/dashboard' replace />
+    }
+
+    return children;
 }
 
 export default PublicRoute;

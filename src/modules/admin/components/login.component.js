@@ -3,7 +3,6 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { loginSchema } from '../admin.schema';
 import { login } from "../admin.actions";
 import { useNavigate } from 'react-router-dom';
-import("../../../style/admin-login.css");
 
 
 function Login(props) {

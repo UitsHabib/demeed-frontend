@@ -1,10 +1,25 @@
 import React from "react";
-import { Route, Navigate } from "react-router-dom";
+import { Navigate, Outlet, useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-function PrivateRoute({ component: Component, ...rest }) {
-    const loggedInUser = localStorage.getItem('access_token');
+import Navbar from "./components/navbar.component";
+import Breadcrumbs from "./components/breadcrumb.component";
 
-    return loggedInUser ?  <Route {...rest} element={ <Component />} /> : <Navigate to="/admin/login" /> ;
+function PrivateRoute({ children }) {
+    const location = useLocation();
+    const loggedInUser = useSelector((state) => state.userReducer.loggedInUser);
+
+    if (!loggedInUser) {
+        return <Navigate to='/admin/login' replace />
+    }
+
+    return (
+        <>
+            <Navbar path={location.pathname}/>
+            {/* <Breadcrumbs /> */}
+            <Outlet />
+        </>
+    );
 }
 
 export default PrivateRoute;

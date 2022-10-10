@@ -1,11 +1,19 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
+import PrivateRoute from "../core/private-route";
+import Dashboard from "./components/dashboard/dashboard.component";
 import Login from './components/login.component';
 
 function AdminRoutes() {
-    const { pathname } = useLocation();
     return (
         <Routes>
-            <Route exact path={pathname} element={<Login />} />
+            <Route 
+                path="/dashboard" 
+                element={
+                    <PrivateRoute >
+                        <Dashboard/>
+                    </PrivateRoute>
+                }
+            />
         </Routes>
     );
 }
