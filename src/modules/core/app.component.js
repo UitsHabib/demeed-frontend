@@ -33,9 +33,4 @@ function App() {
     );
 }
  
-<<<<<<< HEAD
 export default App;
-=======
-export default App;
- 
->>>>>>> 19c1461 (Refactor The Project Structure)

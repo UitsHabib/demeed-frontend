@@ -1,16 +1,17 @@
 import React from 'react'
-import { loginSchema } from '../admin.schema'; // it was exported as object.
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { loginSchema } from '../admin.schema';
 
+const Login=() => {
+    return (
     <div className='container ' style={{marginTop: "12%"}} >
-        <Formik //formik has many props.
+        <Formik
             initialValues={{
                 email: "",
                 password: ""
             }} 
-
             validationSchema={loginSchema}
-
-            onSubmit={(values, actions) => { // so that we gan gain access to the submitted information and send it to the backend.
+            onSubmit={(values, actions) => {
                 console.log(values);
                 actions.setSubmitting(false);
             }}
