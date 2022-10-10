@@ -1,9 +1,6 @@
 import React from 'react'
-import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { loginSchema } from '../admin.schema'; // it was exported as object.
 
-function Login() {
-  return (
     <div className='container ' style={{marginTop: "12%"}} >
         <Formik //formik has many props.
             initialValues={{
