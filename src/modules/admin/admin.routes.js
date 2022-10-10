@@ -1,12 +1,13 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
-import Login from './components/login.component';
+import { Routes, Route } from 'react-router-dom';
+import Dashboard from './components/dashboard.component';
 
-function AdminRoutes () { // many routes will be here.
-    const { pathname } = useLocation(); // Hooks
-
+function AdminRoutes () { 
     return (
         <Routes>
-            <Route path={pathname} element={<Login />} />
+            <Route 
+                path="/dashboard" 
+                element={<Dashboard />} 
+            />
         </Routes>
     );
 }

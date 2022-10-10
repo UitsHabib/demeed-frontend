@@ -20,13 +20,9 @@ function App() {
                     }
                 />
                 
+                <Route path="/admin/*" element={<AdminClientRoutes />} />
+                
                 <Route path="/admin/permission-set/*" element={<PermissionSetClientRoutes />} />
-                <Route 
-                    path="/admin/permission-set/create/successful" 
-                    element={
-                        <CreateUser />
-                    } 
-                />
             </Routes>
          </div>
       </div>
