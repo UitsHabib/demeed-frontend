@@ -1,5 +1,5 @@
 import React from 'react'
-import("../../../style/admin-home-page.css");
+import("../../../../style/admin-home-page.css");
 
 function Dashboard(props) {
 

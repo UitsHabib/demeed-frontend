@@ -3,7 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { loginSchema } from '../admin.schema';
 import { login } from "../admin.actions";
 import { useNavigate } from 'react-router-dom';
-import("../../../style/admin-login.css");
+import("../../../../style/admin-login.css");
 
 
 function Login(props) {
@@ -22,7 +22,7 @@ function Login(props) {
                         .then(response => {
                             const token = response.accessToken;
                             localStorage.setItem("access_token", token);
-                            navigate("/admin/homepage", { state: { someData: token } });
+                            navigate("/admin/dashboard", { state: { someData: token } });
                         })
                         .catch(error => {
                             console.log("Error");

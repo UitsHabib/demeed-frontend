@@ -1,8 +1,8 @@
 import React from "react";
 import { Routes, Route, Navigate  } from 'react-router-dom';
 
-import { Login, AdminClientRoutes } from "../admin";
-import { PermissionSetClientRoutes, CreateUser } from '../permission-set';
+import { Login, AdminClientRoutes } from "../platform/admin";
+import { PermissionSetClientRoutes } from '../permission-set';
 import PublicRoute from "./public-route";
 
 function App() {
