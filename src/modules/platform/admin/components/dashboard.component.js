@@ -1,11 +1,11 @@
 import React from 'react'
-import("../../../../style/admin-home-page.css");
-
+import('../../../../style/admin-dashboard.css');
 function Dashboard(props) {
 
     return (
 
-        <div className='container px-4 py-5' >
+        // <div className='container-fluid' >
+        <>
             <nav className="pb-2 border-bottom custom-breadcrumb" aria-label="breadcrumb">
                 <ol className="breadcrumb">
                     <li className="breadcrumb-item"><a href="/admin/homepage">Admin</a></li>
@@ -13,50 +13,250 @@ function Dashboard(props) {
                     <li className="breadcrumb-item active" aria-current="page">Create</li>
                 </ol>
             </nav>
-
-            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 ">
-
-                <div className="col d-flex align-items-start ">
-                    <div className="custom-border">
-                        <h3 className="fw-bold mb-0 fs-4">Manage Users</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam in repellendus deleniti iusto repellat quod. Veniam recusandae architecto cumque cupiditate? Qui ab cupiditate veritatis maxime. Aliquam iure quisquam quibusdam perferendis quas recusandae culpa fugiat iste. Commodi illo reprehenderit deleniti corrupti quo sapiente beatae ad, placeat exercitationem at ipsam, dolore excepturi.</p>
+            <div className="d-flex flex-wrap justify-content-start" style={{ color: 'black' }}>
+                <div
+                    className="card text-center mt-5  hvr-grow-shadow hvr-round-corners"
+                    style={{
+                        width: '200px',
+                        height: '300px',
+                        marginLeft: '20px',
+                        cursor: 'pointer',
+                        borderRadius: '1em',
+                    }}
+                >
+                    <div
+                        className="hvr-sweep-to-bottom"
+                        style={{
+                            display: 'flex',
+                            height: '100%',
+                        }}
+                    >
+                        <div
+                            className="card-body"
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                        >
+                            <h3 className="card-title">Manage Users</h3>
+                        </div>
                     </div>
                 </div>
-
-                <div className="col d-flex align-items-start">
-                    <div className="custom-border">
-                        <h3 className="fw-bold mb-0 fs-4">Manage Permissions</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam in repellendus deleniti iusto repellat quod. Veniam recusandae architecto cumque cupiditate? Qui ab cupiditate veritatis maxime. Aliquam iure quisquam quibusdam perferendis quas recusandae culpa fugiat iste. Commodi illo reprehenderit deleniti corrupti quo sapiente beatae ad, placeat exercitationem at ipsam, dolore excepturi.</p>
+                {/*  */}
+                <div
+                    className="card text-center mt-5  hvr-grow-shadow hvr-round-corners"
+                    style={{
+                        width: '200px',
+                        height: '300px',
+                        marginLeft: '20px',
+                        cursor: 'pointer',
+                        borderRadius: '1em',
+                    }}
+                >
+                    <div
+                        className="hvr-sweep-to-bottom"
+                        style={{
+                            display: 'flex',
+                            height: '100%',
+                        }}
+                    >
+                        <div
+                            className="card-body"
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                        >
+                            <h3 className="card-title">Manage Permissions</h3>
+                        </div>
                     </div>
                 </div>
-                <div className="col d-flex align-items-start">
-                    <div className="custom-border">
-                        <h3 className="fw-bold mb-0 fs-4">Manage Permission Set</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam in repellendus deleniti iusto repellat quod. Veniam recusandae architecto cumque cupiditate? Qui ab cupiditate veritatis maxime. Aliquam iure quisquam quibusdam perferendis quas recusandae culpa fugiat iste. Commodi illo reprehenderit deleniti corrupti quo sapiente beatae ad, placeat exercitationem at ipsam, dolore excepturi.</p>
+                <div
+                    className="card text-center mt-5  hvr-grow-shadow hvr-round-corners"
+                    style={{
+                        width: '200px',
+                        height: '300px',
+                        marginLeft: '20px',
+                        cursor: 'pointer',
+                        borderRadius: '1em',
+                    }}
+                >
+                    <div
+                        className="hvr-sweep-to-bottom"
+                        style={{
+                            display: 'flex',
+                            height: '100%',
+                        }}
+                    >
+                        <div
+                            className="card-body"
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                        >
+                            <h3 className="card-title">Manage Permission Set</h3>
+                        </div>
                     </div>
                 </div>
-                <div className="col d-flex align-items-start">
-                    <div className="custom-border">
-                        <h3 className="fw-bold mb-0 fs-4">Manage Customers</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam in repellendus deleniti iusto repellat quod. Veniam recusandae architecto cumque cupiditate? Qui ab cupiditate veritatis maxime. Aliquam iure quisquam quibusdam perferendis quas recusandae culpa fugiat iste. Commodi illo reprehenderit deleniti corrupti quo sapiente beatae ad, placeat exercitationem at ipsam, dolore excepturi.</p>
+                {/*  */}
+                <div
+                    className="card text-center mt-5  hvr-grow-shadow hvr-round-corners"
+                    style={{
+                        width: '200px',
+                        height: '300px',
+                        marginLeft: '20px',
+                        cursor: 'pointer',
+                        borderRadius: '1em',
+                    }}
+                >
+                    <div
+                        className="hvr-sweep-to-bottom"
+                        style={{
+                            display: 'flex',
+                            height: '100%',
+                        }}
+                    >
+                        <div
+                            className="card-body"
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                        >
+                            <h3 className="card-title">Manage Customers</h3>
+                        </div>
                     </div>
                 </div>
-                <div className="col d-flex align-items-start">
-                    <div class="custom-border">
-                        <h3 className="fw-bold mb-0 fs-4">Manage Services</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam in repellendus deleniti iusto repellat quod. Veniam recusandae architecto cumque cupiditate? Qui ab cupiditate veritatis maxime. Aliquam iure quisquam quibusdam perferendis quas recusandae culpa fugiat iste. Commodi illo reprehenderit deleniti corrupti quo sapiente beatae ad, placeat exercitationem at ipsam, dolore excepturi.</p>
+                {/*  */}
+                <div
+                    className="card text-center mt-5  hvr-grow-shadow hvr-round-corners"
+                    style={{
+                        width: '200px',
+                        height: '300px',
+                        marginLeft: '20px',
+                        cursor: 'pointer',
+                        borderRadius: '1em',
+                    }}
+                >
+                    <div
+                        className="hvr-sweep-to-bottom"
+                        style={{
+                            display: 'flex',
+                            height: '100%',
+                        }}
+                    >
+                        <div
+                            className="card-body"
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                        >
+                            <h3 className="card-title">Manage Services</h3>
+                        </div>
                     </div>
                 </div>
-                <div className="col d-flex align-items-start">
-                    <div class="custom-border">
-                        <h3 className="fw-bold mb-0 fs-4">Featured title6</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam in repellendus deleniti iusto repellat quod. Veniam recusandae architecto cumque cupiditate? Qui ab cupiditate veritatis maxime. Aliquam iure quisquam quibusdam perferendis quas recusandae culpa fugiat iste. Commodi illo reprehenderit deleniti corrupti quo sapiente beatae ad, placeat exercitationem at ipsam, dolore excepturi.</p>
+                {/*  */}
+                <div
+                    className="card text-center mt-5  hvr-grow-shadow hvr-round-corners"
+                    style={{
+                        width: '200px',
+                        height: '300px',
+                        marginLeft: '20px',
+                        cursor: 'pointer',
+                        borderRadius: '1em',
+                    }}
+                >
+                    <div
+                        className="hvr-sweep-to-bottom"
+                        style={{
+                            display: 'flex',
+                            height: '100%',
+                        }}
+                    >
+                        <div
+                            className="card-body"
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                        >
+                            <h3 className="card-title">Featured title1</h3>
+                        </div>
                     </div>
                 </div>
-
+                {/*  */}
+                <div
+                    className="card text-center mt-5  hvr-grow-shadow hvr-round-corners"
+                    style={{
+                        width: '200px',
+                        height: '300px',
+                        marginLeft: '20px',
+                        cursor: 'pointer',
+                        borderRadius: '1em',
+                    }}
+                >
+                    <div
+                        className="hvr-sweep-to-bottom"
+                        style={{
+                            display: 'flex',
+                            height: '100%',
+                        }}
+                    >
+                        <div
+                            className="card-body"
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                        >
+                            <h3 className="card-title">Featured title2</h3>
+                        </div>
+                    </div>
+                </div>
+                {/*  */}
+                <div
+                    className="card text-center mt-5  hvr-grow-shadow hvr-round-corners"
+                    style={{
+                        width: '200px',
+                        height: '300px',
+                        marginLeft: '20px',
+                        cursor: 'pointer',
+                        borderRadius: '1em',
+                    }}
+                >
+                    <div
+                        className="hvr-sweep-to-bottom"
+                        style={{
+                            display: 'flex',
+                            height: '100%',
+                        }}
+                    >
+                        <div
+                            className="card-body"
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                        >
+                            <h3 className="card-title">Featured title3</h3>
+                        </div>
+                    </div>
+                </div>
+                {/*  */}
             </div>
-        </div>
 
+        </>
+        // </div>
     );
 }
 
